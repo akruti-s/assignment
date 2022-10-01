@@ -63,10 +63,10 @@ def store_csv():
 
 def main():
     url='https://registers.esma.europa.eu/solr/esma_registers_firds_files/select?q=*&fq=publication_date:%5B2021-01-17T00:00:00Z+TO+2021-01-19t23:59:59Z%5D&wt=xml&indent=true&start=0&rows=100'
-    #file_name=saving_xml(url)
-    #Zip_file_name=parsexml(file_name)
-    #extractzip(Zip_file_name)
-    #xml_to_csv()
-    store_csv()
+    file_name=saving_xml(url)
+    Zip_file_name=parsexml(file_name)
+    extractzip(Zip_file_name)
+    xml_to_csv()
+    #store_csv()
 if __name__=="__main__":
     main()
